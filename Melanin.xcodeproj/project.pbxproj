@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F678D2DC15E752F8000EC904 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F678D2DB15E752F8000EC904 /* Cocoa.framework */; };
+		F678D2DE15E752F8000EC904 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F678D2DD15E752F8000EC904 /* ScreenSaver.framework */; };
+		F678D2E815E752F8000EC904 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F678D2E615E752F8000EC904 /* InfoPlist.strings */; };
+		F678D2EC15E752F8000EC904 /* MelaninView.m in Sources */ = {isa = PBXBuildFile; fileRef = F678D2EB15E752F8000EC904 /* MelaninView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F678D2D815E752F8000EC904 /* Melanin.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Melanin.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F678D2DB15E752F8000EC904 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F678D2DD15E752F8000EC904 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		F678D2E015E752F8000EC904 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F678D2E115E752F8000EC904 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F678D2E215E752F8000EC904 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F678D2E515E752F8000EC904 /* Melanin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Melanin-Info.plist"; sourceTree = "<group>"; };
+		F678D2E715E752F8000EC904 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F678D2E915E752F8000EC904 /* Melanin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Melanin-Prefix.pch"; sourceTree = "<group>"; };
+		F678D2EA15E752F8000EC904 /* MelaninView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelaninView.h; sourceTree = "<group>"; };
+		F678D2EB15E752F8000EC904 /* MelaninView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelaninView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F678D2D315E752F7000EC904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F678D2DC15E752F8000EC904 /* Cocoa.framework in Frameworks */,
+				F678D2DE15E752F8000EC904 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F678D2CB15E752F7000EC904 = {
+			isa = PBXGroup;
+			children = (
+				F678D2E315E752F8000EC904 /* Melanin */,
+				F678D2DA15E752F8000EC904 /* Frameworks */,
+				F678D2D915E752F8000EC904 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F678D2D915E752F8000EC904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F678D2D815E752F8000EC904 /* Melanin.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F678D2DA15E752F8000EC904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F678D2DB15E752F8000EC904 /* Cocoa.framework */,
+				F678D2DD15E752F8000EC904 /* ScreenSaver.framework */,
+				F678D2DF15E752F8000EC904 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F678D2DF15E752F8000EC904 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F678D2E015E752F8000EC904 /* AppKit.framework */,
+				F678D2E115E752F8000EC904 /* CoreData.framework */,
+				F678D2E215E752F8000EC904 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F678D2E315E752F8000EC904 /* Melanin */ = {
+			isa = PBXGroup;
+			children = (
+				F678D2EA15E752F8000EC904 /* MelaninView.h */,
+				F678D2EB15E752F8000EC904 /* MelaninView.m */,
+				F678D2E415E752F8000EC904 /* Supporting Files */,
+			);
+			path = Melanin;
+			sourceTree = "<group>";
+		};
+		F678D2E415E752F8000EC904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F678D2E515E752F8000EC904 /* Melanin-Info.plist */,
+				F678D2E615E752F8000EC904 /* InfoPlist.strings */,
+				F678D2E915E752F8000EC904 /* Melanin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F678D2D415E752F7000EC904 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F678D2D715E752F7000EC904 /* Melanin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F678D2EF15E752F8000EC904 /* Build configuration list for PBXNativeTarget "Melanin" */;
+			buildPhases = (
+				F678D2D215E752F7000EC904 /* Sources */,
+				F678D2D315E752F7000EC904 /* Frameworks */,
+				F678D2D415E752F7000EC904 /* Headers */,
+				F678D2D515E752F7000EC904 /* Resources */,
+				F678D2D615E752F7000EC904 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Melanin;
+			productName = Melanin;
+			productReference = F678D2D815E752F8000EC904 /* Melanin.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F678D2CD15E752F7000EC904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Tobias Pape";
+			};
+			buildConfigurationList = F678D2D015E752F7000EC904 /* Build configuration list for PBXProject "Melanin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F678D2CB15E752F7000EC904;
+			productRefGroup = F678D2D915E752F8000EC904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F678D2D715E752F7000EC904 /* Melanin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F678D2D515E752F7000EC904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F678D2E815E752F8000EC904 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F678D2D615E752F7000EC904 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F678D2D215E752F7000EC904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F678D2EC15E752F8000EC904 /* MelaninView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F678D2E615E752F8000EC904 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F678D2E715E752F8000EC904 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F678D2ED15E752F8000EC904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F678D2EE15E752F8000EC904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F678D2F015E752F8000EC904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Melanin/Melanin-Prefix.pch";
+				INFOPLIST_FILE = "Melanin/Melanin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F678D2F115E752F8000EC904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Melanin/Melanin-Prefix.pch";
+				INFOPLIST_FILE = "Melanin/Melanin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F678D2D015E752F7000EC904 /* Build configuration list for PBXProject "Melanin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F678D2ED15E752F8000EC904 /* Debug */,
+				F678D2EE15E752F8000EC904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F678D2EF15E752F8000EC904 /* Build configuration list for PBXNativeTarget "Melanin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F678D2F015E752F8000EC904 /* Debug */,
+				F678D2F115E752F8000EC904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F678D2CD15E752F7000EC904 /* Project object */;
+}
