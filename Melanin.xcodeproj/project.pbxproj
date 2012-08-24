@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F678D2DC15E752F8000EC904 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F678D2DB15E752F8000EC904 /* Cocoa.framework */; };
 		F678D2DE15E752F8000EC904 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F678D2DD15E752F8000EC904 /* ScreenSaver.framework */; };
-		F678D2E815E752F8000EC904 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F678D2E615E752F8000EC904 /* InfoPlist.strings */; };
 		F678D2EC15E752F8000EC904 /* MelaninView.m in Sources */ = {isa = PBXBuildFile; fileRef = F678D2EB15E752F8000EC904 /* MelaninView.m */; };
 /* End PBXBuildFile section */
 
@@ -17,13 +16,7 @@
 		F678D2D815E752F8000EC904 /* Melanin.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Melanin.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F678D2DB15E752F8000EC904 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F678D2DD15E752F8000EC904 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
-		F678D2E015E752F8000EC904 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		F678D2E115E752F8000EC904 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F678D2E215E752F8000EC904 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F678D2E515E752F8000EC904 /* Melanin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Melanin-Info.plist"; sourceTree = "<group>"; };
-		F678D2E715E752F8000EC904 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F678D2E915E752F8000EC904 /* Melanin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Melanin-Prefix.pch"; sourceTree = "<group>"; };
-		F678D2EA15E752F8000EC904 /* MelaninView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelaninView.h; sourceTree = "<group>"; };
 		F678D2EB15E752F8000EC904 /* MelaninView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelaninView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,25 +55,13 @@
 			children = (
 				F678D2DB15E752F8000EC904 /* Cocoa.framework */,
 				F678D2DD15E752F8000EC904 /* ScreenSaver.framework */,
-				F678D2DF15E752F8000EC904 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F678D2DF15E752F8000EC904 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F678D2E015E752F8000EC904 /* AppKit.framework */,
-				F678D2E115E752F8000EC904 /* CoreData.framework */,
-				F678D2E215E752F8000EC904 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		F678D2E315E752F8000EC904 /* Melanin */ = {
 			isa = PBXGroup;
 			children = (
-				F678D2EA15E752F8000EC904 /* MelaninView.h */,
 				F678D2EB15E752F8000EC904 /* MelaninView.m */,
 				F678D2E415E752F8000EC904 /* Supporting Files */,
 			);
@@ -91,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				F678D2E515E752F8000EC904 /* Melanin-Info.plist */,
-				F678D2E615E752F8000EC904 /* InfoPlist.strings */,
-				F678D2E915E752F8000EC904 /* Melanin-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,7 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F678D2E815E752F8000EC904 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,86 +165,52 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F678D2E615E752F8000EC904 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F678D2E715E752F8000EC904 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		F678D2ED15E752F8000EC904 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
 		F678D2EE15E752F8000EC904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
-		};
-		F678D2F015E752F8000EC904 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Melanin/Melanin-Prefix.pch";
-				INFOPLIST_FILE = "Melanin/Melanin-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = saver;
-			};
-			name = Debug;
 		};
 		F678D2F115E752F8000EC904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Melanin/Melanin-Prefix.pch";
 				INFOPLIST_FILE = "Melanin/Melanin-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,7 +224,6 @@
 		F678D2D015E752F7000EC904 /* Build configuration list for PBXProject "Melanin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F678D2ED15E752F8000EC904 /* Debug */,
 				F678D2EE15E752F8000EC904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -289,10 +232,10 @@
 		F678D2EF15E752F8000EC904 /* Build configuration list for PBXNativeTarget "Melanin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F678D2F015E752F8000EC904 /* Debug */,
 				F678D2F115E752F8000EC904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

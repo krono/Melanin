@@ -6,7 +6,12 @@
 //  Copyright (c) 2012 Tobias Pape. All rights reserved.
 //
 
-#import "MelaninView.h"
+#import <ScreenSaver/ScreenSaver.h>
+
+@interface MelaninView : ScreenSaverView
+
+@end
+
 
 @implementation MelaninView
 
@@ -14,39 +19,10 @@
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:10];
     }
     return self;
 }
 
-- (void)startAnimation
-{
-    [super startAnimation];
-}
-
-- (void)stopAnimation
-{
-    [super stopAnimation];
-}
-
-- (void)drawRect:(NSRect)rect
-{
-    [super drawRect:rect];
-}
-
-- (void)animateOneFrame
-{
-    return;
-}
-
-- (BOOL)hasConfigureSheet
-{
-    return NO;
-}
-
-- (NSWindow*)configureSheet
-{
-    return nil;
-}
 
 @end
