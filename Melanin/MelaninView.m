@@ -3,13 +3,12 @@
 //  Melanin
 //
 //  Created by Tobias Pape on 24.08.12.
-//  Copyright (c) 2012-2015 Tobias Pape. All rights reserved.
+//  Copyright (c) 2012-2017 Tobias Pape. All rights reserved.
 //
 
-#import <ScreenSaver/ScreenSaver.h>
+@import ScreenSaver;
 
 @interface MelaninView : ScreenSaverView
-
 @end
 
 
